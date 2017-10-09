@@ -3,6 +3,7 @@ package com.example.android.recyclerviewexample.screen.RecyclerView.screen;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 public abstract class BaseRecyclerViewAdapter<V extends RecyclerView.ViewHolder>
         extends RecyclerView.Adapter<V> {
@@ -16,13 +17,8 @@ public abstract class BaseRecyclerViewAdapter<V extends RecyclerView.ViewHolder>
     protected Context getContext() {
         return mContext;
     }
-
-    /**
-     * OnRecyclerViewItemClickListener
-     *
-     * @param <T> Data from item click
-     */
+    
     public interface OnRecyclerViewItemClickListener<T> {
-        void onItemRecyclerViewClick(T item);
+        void onItemRecyclerViewClick(View view, T item);
     }
 }

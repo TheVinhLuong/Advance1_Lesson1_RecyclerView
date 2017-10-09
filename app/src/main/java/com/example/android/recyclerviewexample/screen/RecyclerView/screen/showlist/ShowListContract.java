@@ -1,13 +1,14 @@
-package com.example.android.recyclerviewexample.screen.RecyclerView;
+package com.example.android.recyclerviewexample.screen.RecyclerView.screen.showlist;
 
 
-import com.example.android.recyclerviewexample.screen.RecyclerView.base.BasePresenter;
+import com.example.android.recyclerviewexample.screen.RecyclerView.data.model.Word;
+import com.example.android.recyclerviewexample.screen.RecyclerView.screen.BasePresenter;
 import com.example.android.recyclerviewexample.screen.RecyclerView.screen.BaseViewModel;
 
 /**
  * This specifies the contract between the view and the presenter.
  */
-interface RecyclerViewContract {
+interface ShowListContract {
     /**
      * View.
      */
@@ -18,5 +19,6 @@ interface RecyclerViewContract {
      * Presenter.
      */
     interface Presenter extends BasePresenter {
+        void onItemWordClicked(Word word);
     }
 }

@@ -1,4 +1,4 @@
-package com.example.android.recyclerviewexample.screen.RecyclerView.base;
+package com.example.android.recyclerviewexample.screen.RecyclerView.screen;
 
 /**
  * Created by VinhTL on 09/10/2017.
